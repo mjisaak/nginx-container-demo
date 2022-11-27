@@ -49,7 +49,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v2
         with:
-          context: ./services/client
+          context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
